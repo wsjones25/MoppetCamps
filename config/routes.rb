@@ -10,6 +10,14 @@ Rails.application.routes.draw do
     unlocks:            "users/unlocks"
   }
 
+  devise_for :parents, controllers: {
+    sessions:           "parents/sessions",
+    passwords:          "parents/passwords",
+    registrations:      "parents/registrations",
+    confirmations:      "parents/confirmations",
+    unlocks:            "parents/unlocks"
+  }
+
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'login', to: 'pages#login'
