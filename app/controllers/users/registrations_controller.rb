@@ -2,6 +2,14 @@
 
 class Users::RegistrationsController < Devise::RegistrationsController
 
+  def after_sign_up_path_for(resource)
+    "/user/company/new"
+  end
+ 
+  def after_inactive_sign_up_path_for(resource)
+    "/user/company/new"
+  end
+
   private
   def sign_up_params
     params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)

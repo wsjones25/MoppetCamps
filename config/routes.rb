@@ -22,5 +22,9 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'login', to: 'pages#login'
   get 'sign_up', to: 'pages#sign_up'
+
+  resource :user, only: [] do
+    resource :company, controller: 'users/companies'
+  end
   
 end

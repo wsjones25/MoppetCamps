@@ -1,0 +1,33 @@
+<h3>Company Info</h3>
+
+<%= form_for(@company, url: user_company_path) do |f| %>
+	<div class="field">
+		<%= f.label :company_name %>
+		<%= f.text_field :company_name %>
+	</div>
+
+	<div class="field">
+		<%= f.label :about %>
+		<%= f.text_field :about %>
+	</div>
+
+	<div class="field">
+		<%= f.label :welfare %>
+		<%= f.text_field :welfare %>
+	</div>
+
+	<div class="field">
+		<%= f.label :childcare_voucher_info %>
+		<%= f.text_field :childcare_voucher_info %>
+	</div>
+
+	<div class="field">
+		<%= f.label :staff_info %>
+		<%= f.text_field :staff_info %>
+	</div>
+	
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+
+<% end %>
