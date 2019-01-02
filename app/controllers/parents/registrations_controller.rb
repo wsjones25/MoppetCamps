@@ -4,11 +4,11 @@ class Parents::RegistrationsController < Devise::RegistrationsController
   
   private
   def sign_up_params
-    params.require(:parent).permit(:email, :password, :password_confirmation)
+    params.require(:parent).permit(:email, :password, :password_confirmation, :first_name, :last_name, :mobile, :postcode, :secondary_first_name, :secondary_last_name, :secondary_mobile)
   end
 
   def account_update_params
-    params.require(:parent).permit(:email, :password, :password_confirmation, :current_password)
+    params.require(:parent).permit(:email, :password, :password_confirmation, :current_password, :first_name, :last_name, :mobile, :postcode, :secondary_first_name, :secondary_last_name, :secondary_mobile)
   end
 
   # before_action :configure_sign_up_params, only: [:create]

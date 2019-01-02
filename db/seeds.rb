@@ -16,11 +16,11 @@ User.create!(email: "user+6@test.com", password: "123456", password_confirmation
 
 puts "6 businesses created"
 
-Parent.create!(email: "parent+1@test.com", password: "123456", password_confirmation: "123456")
-Parent.create!(email: "parent+2@test.com", password: "123456", password_confirmation: "123456")
-Parent.create!(email: "parent+3@test.com", password: "123456", password_confirmation: "123456")
-Parent.create!(email: "parent+4@test.com", password: "123456", password_confirmation: "123456")
-Parent.create!(email: "parent+5@test.com", password: "123456", password_confirmation: "123456")
-Parent.create!(email: "parent+6@test.com", password: "123456", password_confirmation: "123456")
+Parent.create!(email: "parent+1@test.com", password: "123456", password_confirmation: "123456", first_name: "Will", last_name: "Jones", mobile: "07817627743", postcode: "AL5 2EG", secondary_first_name: "Bull", secondary_last_name: "Bones", secondary_mobile: "07876535522")
+Parent.create!(email: "parent+2@test.com", password: "123456", password_confirmation: "123456", first_name: "Will", last_name: "Jones", mobile: "07817627743", postcode: "AL5 2EG", secondary_first_name: "Bull", secondary_last_name: "Bones", secondary_mobile: "07876535522")
+Parent.create!(email: "parent+3@test.com", password: "123456", password_confirmation: "123456", first_name: "Will", last_name: "Jones", mobile: "07817627743", postcode: "AL5 2EG", secondary_first_name: "Bull", secondary_last_name: "Bones", secondary_mobile: "07876535522")
+Parent.create!(email: "parent+4@test.com", password: "123456", password_confirmation: "123456", first_name: "Will", last_name: "Jones", mobile: "07817627743", postcode: "AL5 2EG", secondary_first_name: "Bull", secondary_last_name: "Bones", secondary_mobile: "07876535522")
+Parent.create!(email: "parent+5@test.com", password: "123456", password_confirmation: "123456", first_name: "Will", last_name: "Jones", mobile: "07817627743", postcode: "AL5 2EG", secondary_first_name: "Bull", secondary_last_name: "Bones", secondary_mobile: "07876535522")
+Parent.create!(email: "parent+6@test.com", password: "123456", password_confirmation: "123456", first_name: "Will", last_name: "Jones", mobile: "07817627743", postcode: "AL5 2EG", secondary_first_name: "Bull", secondary_last_name: "Bones", secondary_mobile: "07876535522")
 
 puts "6 parents created"
