@@ -28,5 +28,7 @@ Rails.application.routes.draw do
       resources :camps, except: [:index], controller: 'users/companies/camps' 
     end
   end
+
+  resources :camps, only: [:index, :show]
   
 end

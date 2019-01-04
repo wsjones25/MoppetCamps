@@ -1,0 +1,10 @@
+<h2>Camps</h2>
+
+<% @camps.each do |camp| %>
+	<h3><%= link_to camp.name, camp_path(camp) %></h3>
+	<p>Duration: <%= camp.length %> days</p>
+	<p>Postcode: <%= camp.postcode %></p>
+	<p>Price: £<%= camp.price %></p>
+	<hr>
+<% end %>
+
