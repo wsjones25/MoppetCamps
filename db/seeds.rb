@@ -108,6 +108,66 @@ Camp.create!(company_id: Company.second.id,
 			things_to_bring: "A passion for cricket."
 			)
 
+Camp.create!(company_id: Company.second.id,
+			name: "Bowling camp for 12 to 15 year olds",
+			camp_type: "cricket",
+			length: 1,
+			#age_range: [9, 10],
+			activities: "cricket",
+			capacity: 20,
+			description: "Advanced bowling camp to hone your skills.",
+			postcode: "AL5 2EG",
+			price: 150,
+			coordinator: "Gary Barlow",
+			things_to_bring: "A passion for cricket."
+			)
+
+Camp.create!(company_id: Company.third.id,
+			name: "Band camp",
+			camp_type: "music",
+			length: 5,
+			#age_range: [9, 10],
+			activities: "music",
+			capacity: 10,
+			description: "Play in an orchestra and learn new skills.",
+			postcode: "AL5 2EG",
+			price: 150,
+			coordinator: "Tom Jones",
+			things_to_bring: "Your own instrument."
+			)
+
+Camp.create!(company_id: Company.fourth.id,
+			name: "Multi-activity camp for 8 - 10 year olds",
+			camp_type: "multi",
+			length: 3,
+			#age_range: [9, 10],
+			activities: "cricket, football, games",
+			capacity: 20,
+			description: "Pick your favourite activities.",
+			postcode: "AL5 2EG",
+			price: 150,
+			coordinator: "Will Jones",
+			things_to_bring: "A good pair of trainers."
+			)
+
+Camp.create!(company_id: Company.fifth.id,
+			name: "Black Belt Camp for U10s",
+			camp_type: "karate",
+			length: 1,
+			#age_range: [9, 10],
+			activities: "karate",
+			capacity: 20,
+			description: "Get your black belt",
+			postcode: "AL5 3QD",
+			price: 150,
+			coordinator: "Gary Barlow",
+			things_to_bring: "Must be a yellow belt."
+			)
+
+puts "7 camps created"
+
+
+
 
 
 
