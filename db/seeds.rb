@@ -65,3 +65,52 @@ Company.create!(user_id: User.fifth.id,
 				)
 
 puts "5 companies created"
+
+Camp.create!(company_id: Company.first.id,
+			name: "Week long cooking camp",
+			camp_type: "cookery",
+			length: 5,
+			#age_range: [4, 5, 6],
+			activities: "Cooking",
+			capacity: 20,
+			description: "Learn basic cooking techniques and add some new recipes to your repertoire",
+			postcode: "AL5 2EG",
+			price: 150,
+			coordinator: "Gary Barlow",
+			things_to_bring: "A passion for cooking."
+			)
+
+Camp.create!(company_id: Company.first.id,
+			name: "Beginners day cookery course",
+			camp_type: "cookery",
+			length: 1,
+			#age_range: [4, 5, 6],
+			activities: "Cooking",
+			capacity: 20,
+			description: "Learn basic cooking techniques.",
+			postcode: "AL5 2EG",
+			price: 150,
+			coordinator: "Gary Barlow",
+			things_to_bring: "A passion for cooking."
+			)
+
+Camp.create!(company_id: Company.second.id,
+			name: "Batting camp for 9 to 10 year olds",
+			camp_type: "cricket",
+			length: 1,
+			#age_range: [9, 10],
+			activities: "cricket",
+			capacity: 20,
+			description: "Advanced batting camp to hone your skills.",
+			postcode: "AL5 2EG",
+			price: 150,
+			coordinator: "Gary Barlow",
+			things_to_bring: "A passion for cricket."
+			)
+
+
+
+
+
+
+

@@ -24,8 +24,8 @@ Rails.application.routes.draw do
   get 'sign_up', to: 'pages#sign_up'
 
   resource :user, only: [] do
-    resource :company, controller: 'users/companies' do 
-      resources :camps, controller: 'users/companies/camps' 
+    resource :company, except: [:index, :destroy], controller: 'users/companies' do 
+      resources :camps, except: [:index], controller: 'users/companies/camps' 
     end
   end
   

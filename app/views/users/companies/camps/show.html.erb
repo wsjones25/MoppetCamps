@@ -1,0 +1,15 @@
+<h1><%= @camp.name %></h1>
+<p><%= @camp.description %></p>
+<p>Type: <%= @camp.camp_type %></p>
+<p>Length: <%= @camp.length %> days</p>
+<p>Price: £<%= @camp.price %></p>
+<p>Things to bring: <%= @camp.things_to_bring %></p>
+<p>Postcode: <%= @camp.postcode %></p>
+<br>
+<div><%= link_to "Edit", edit_user_company_camp_path %></div>
+<div><%= link_to "Delete", user_company_camp_path, method: :delete, data: { confirm: 'Are you sure?' }  %></div>
+<div><%= link_to "Back", user_company_path %></div>
+
+
+
+

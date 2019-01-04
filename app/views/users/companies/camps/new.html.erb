@@ -1,0 +1,58 @@
+<h3>New Camp Info</h3>
+
+<%= form_for(@camp, url: user_company_camps_path) do |f| %>
+	<div class="field">
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+
+	<div class="field">
+		<%= f.label :camp_type %>
+		<%= f.text_field :camp_type %>
+	</div>
+
+	<div class="field">
+		<%= f.label :length %>
+		<%= f.number_field :length %>
+	</div>
+
+	<div class="field">
+		<%= f.label :activities %>
+		<%= f.text_field :activities %>
+	</div>
+
+	<div class="field">
+		<%= f.label :capacity %>
+		<%= f.text_field :capacity %>
+	</div>
+
+	<div class="field">
+		<%= f.label :description %>
+		<%= f.text_field :description %>
+	</div>
+
+	<div class="field">
+		<%= f.label :postcode %>
+		<%= f.text_field :postcode %>
+	</div>
+
+	<div class="field">
+		<%= f.label :price %>
+		<%= f.number_field :price %>
+	</div>
+
+	<div class="field">
+		<%= f.label :coordinator %>
+		<%= f.text_field :coordinator %>
+	</div>
+
+	<div class="field">
+		<%= f.label :things_to_bring %>
+		<%= f.text_field :things_to_bring %>
+	</div>
+	
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+
+<% end %>

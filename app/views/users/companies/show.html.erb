@@ -1,5 +1,15 @@
 <h1><%= @company.company_name %></h1>
 <p><%= @company.about %></p>
-<p><%= link_to "Change details", edit_user_company_path %></p>
+<br>
+<h2>Camps</h2>
+<ol>
+	<% @camps.each do |camp| %>
+		<li><%= link_to camp.name, user_company_camp_path(camp) %></li>
+	<% end %>
+</ol>
+<br>
+
+<div><%= link_to "Change details", edit_user_company_path %></div>
+<div><%= link_to "Create new camp", new_user_company_camp_path %></div>
 
 
